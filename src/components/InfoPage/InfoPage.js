@@ -63,26 +63,6 @@ class InfoPage extends React.Component {
            </div>
         )
       }
-
-
-    const newBook = {
-      description: this.state.description,
-      image_url: this.state.image_url
-    }
-    // Axios.post('/api/shelf', newBook ).then((response) => {
-    //   console.log('post is sent')
-    // }).catch(error => console.log('unsuccessful post', error));
-
-    this.props.dispatch({
-      type: 'ADD_TO_SHELF',
-      payload: newBook
-    });
-    this.setState({
-      description: '',
-      image_url: ''
-    })
-  }
-
   render() {
     return (
       <div>
